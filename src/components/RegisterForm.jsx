@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
 import {registerSchema} from '../registerSchema.js';
 import {yupResolver} from "@hookform/resolvers/yup";
@@ -11,14 +11,19 @@ export default function RegisterForm() {
         register,
         handleSubmit,
         reset,
-        formState: {errors, isSubmitting},
+        formState: {errors},
     } = useForm({
         resolver: yupResolver(registerSchema),
         modeL: "onTouched"
     })
     const onSubmit = (data) => {
         console.log('Form Data:', data);
+        setTimeout(() => {
+            setSuccess(true);
+            reset();
+        }, 1000)
     };
+
     return (
         <div className="register-container">
             <div className="register-form-section">
