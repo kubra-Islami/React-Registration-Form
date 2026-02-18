@@ -21,7 +21,6 @@ export default function RegisterForm() {
     };
     return (
         <div className="register-container">
-            {/* LEFT SIDE - FORM */}
             <div className="register-form-section">
                 <div className="form-card">
                     <h2>Create Account</h2>
@@ -73,7 +72,6 @@ export default function RegisterForm() {
                 </div>
             </div>
 
-            {/* RIGHT SIDE - IMAGE */}
             <div className="register-image-section">
                 <div className="overlay">
                     <h1>Welcome Back</h1>

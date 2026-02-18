@@ -10,7 +10,7 @@
     height: 100vh;
 }
 
-/* LEFT SIDE */
+/* LEFT SIDE STYLE */
 .register-form-section {
     flex: 1;
     display: flex;
@@ -99,7 +99,7 @@
     font-size: 14px;
 }
 
-/* RIGHT SIDE */
+/* RIGHT SIDE STYLE */
 .register-image-section {
     flex: 1;
     background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")
@@ -130,7 +130,7 @@
     max-width: 300px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE PART*/
 @media (max-width: 900px) {
     .register-container {
         flex-direction: column;
